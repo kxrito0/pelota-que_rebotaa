@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pelota que rebota</title>
+    <title>pelota loca</title>
+    <style>
+        /* Reset: sin margenes ni scroll, el canvas llena toda la ventana. */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+        /* Titulo centrado en la parte superior, encima del canvas. */
+        h1 {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            font-family: sans-serif;
+            pointer-events: none;   /* no bloquea el cursor sobre la pelota */
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <!-- p5.sound es una libreria aparte desde p5.js 2.x (envuelve Tone.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
 </head>
 <body>
-    <h1>Pelota que rebota</h1>
-    
+    <h1>Pelota loca</h1>
+
 </body>
 </html>
